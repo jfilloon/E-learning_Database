@@ -1,3 +1,92 @@
+Grad Stu
+Ethan Brooks — Computer Science
+
+Natalie Vaughn — Clinical Psychology
+
+Caleb Mercer — Engineering
+
+Priya Shah — Finance
+
+Benjamin Holloway — History
+
+Sofia Delgado — Biology
+
+Liam Prescott — Applied Mathematics
+
+Grace Whitaker — English
+
+Nathan Keller — Public Health Sciences
+
+Isabelle Monroe — Clinical Psychology
+
+Jordan Patel — Computer Science
+
+Chloe Bennett — Finance
+
+Mason Rivera — Engineering
+
+Elena Foster — Biology
+
+Dominic Hayes — Applied Mathematics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ('EB5402', 'Ethan', 'Brooks', 'ethan.brooks@gradlearn.edu', '1998-03-18', '2025-08-25'),
 
 ('NV2719', 'Natalie', 'Vaughn', 'natalie.vaughn@gradlearn.edu', '1997-11-02', '2025-08-25'),

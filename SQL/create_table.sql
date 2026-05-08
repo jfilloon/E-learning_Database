@@ -71,5 +71,68 @@ CREATE TABLE grade (
 
 ALTER TABLE instructor
 ADD prefix VARCHAR(10) NULL;
-
     
+ALTER TABLE student
+ADD major VARCHAR(50);
+
+UPDATE student
+SET major = 'Computer Science'
+WHERE sid = 'MS6632';
+UPDATE student
+SET major = 'Psychology'
+WHERE sid = 'LE3841'
+UPDATE student
+SET major = CASE sid
+    WHEN 'LE3841' THEN 'Biology'
+    WHEN 'EM2759' THEN 'English'
+    WHEN 'JP9184' THEN 'Finance'
+    WHEN 'AJ4407' THEN 'Health Sciences'
+    WHEN 'JF5523' THEN 'History'
+    WHEN 'II7391' THEN 'Mathematics'
+    WHEN 'OH2846' THEN 'Engineering'
+    WHEN 'DM5178' THEN 'Psychology'
+    WHEN 'EM8421' THEN 'Biology'
+    WHEN 'AR3905' THEN 'English'
+    WHEN 'RL6619' THEN 'Computer Science'
+    WHEN 'TC2744' THEN 'History'
+    WHEN 'NB7038' THEN 'Finance'
+    WHEN 'SK1159' THEN 'Health Sciences'
+    WHEN 'DT4820' THEN 'Engineering'
+    WHEN 'HC3947' THEN 'Mathematics'
+    WHEN 'LM6201' THEN 'Biology'
+    WHEN 'PB1754' THEN 'Psychology'
+    WHEN 'CW8336' THEN 'Computer Science'
+    WHEN 'AK5298' THEN 'English'
+    WHEN 'JR4106' THEN 'Finance'
+    WHEN 'MG7612' THEN 'Health Sciences'
+    WHEN 'EB5402' THEN 'Computer Science'
+    WHEN 'NV2719' THEN 'Clinical Psychology'
+    WHEN 'CM6841' THEN 'Engineering'
+    WHEN 'PS3925' THEN 'Finance'
+    WHEN 'BH7150' THEN 'History'
+    WHEN 'SD4482' THEN 'Biology'
+    WHEN 'LP8304' THEN 'Applied Mathematics'
+    WHEN 'GW2647' THEN 'English'
+    WHEN 'NK5913' THEN 'Public Health Sciences'
+    WHEN 'IM7068' THEN 'Clinical Psychology'
+    WHEN 'JP3475' THEN 'Computer Science'
+    WHEN 'CB9186' THEN 'Finance'
+    WHEN 'MR4521' THEN 'Engineering'
+    WHEN 'EF7839' THEN 'Biology'
+    WHEN 'DH6254' THEN 'Applied Mathematics'
+END
+WHERE sid NOT IN ('MH1027', 'MS6632')
+);
+
+ALTER TABLE student
+ADD gradelevel VARCHAR(20);
+
+UPDATE student
+SET gradelevel = CASE
+    WHEN sid IN (
+        'EB5402', 'NV2719', 'CM6841', 'PS3925', 'BH7150',
+        'SD4482', 'LP8304', 'GW2647', 'NK5913', 'IM7068',
+        'JP3475', 'CB9186', 'MR4521', 'EF7839', 'DH6254'
+    ) THEN 'Graduate'
+    ELSE 'Undergraduate'
+END;

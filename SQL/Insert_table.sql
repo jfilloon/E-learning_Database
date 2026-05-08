@@ -76,3 +76,52 @@ insert into instructor values (
 ('MRFIN146', NULL, 'Miles', 'Rowe', 'miles.rowe@learn.edu', 'FINA')
 );
 
+insert into course values ( -- ug courses
+('BIO101', 'GKBIO449', 'Biology Basics', 'Introduction to foundational concepts in biology.', 4, 'Undergraduate'),
+('BIO215', 'LNBIO662', 'Genetics', 'Study of heredity, genes, and genetic variation.', 4, 'Undergraduate'),
+
+('HIST110', 'JPHIS390', 'World History', 'Survey of major world civilizations and historical events.', 3, 'Undergraduate'),
+('HIST240', 'ARHIS204', 'Modern American History', 'Examination of political, social, and cultural developments in the U.S.', 3, 'Undergraduate'),
+
+('PSY101', 'SMPS781', 'Introduction to Psychology', 'Overview of psychological principles and behavior.', 3, 'Undergraduate'),
+('PSY230', 'RJPS556', 'Abnormal Psychology', 'Study of psychological disorders and treatment approaches.', 3, 'Undergraduate'),
+
+('MATH115', 'CLMAT284', 'College Algebra', 'Functions, equations, and algebraic problem solving.', 3, 'Undergraduate'),
+('MATH210', 'AGMAT173', 'Statistics', 'Introduction to statistical methods and data analysis.', 3, 'Undergraduate'),
+
+('ENGL101', 'MWENG639', 'English Composition', 'Development of academic writing and communication skills.', 3, 'Undergraduate'),
+('ENGL220', 'SBENG271', 'Creative Writing', 'Practice in fiction, poetry, and narrative writing.', 3, 'Undergraduate'),
+
+('ENGI105', 'KRENG714', 'Introduction to Engineering', 'Overview of engineering disciplines and design principles.', 3, 'Undergraduate'),
+('ENGI230', 'TNENG468', 'Engineering Graphics', 'Technical drawing and computer-aided design concepts.', 3, 'Undergraduate'),
+
+('CS101', 'BSCS317', 'Intro to Programming', 'Fundamentals of programming logic and development.', 4, 'Undergraduate'),
+('CS240', 'RTCS245', 'Database Systems', 'Introduction to relational databases and SQL.', 3, 'Undergraduate'),
+
+('HSCI120', 'EAHSC321', 'Personal Health', 'Concepts of physical and mental wellness.', 3, 'Undergraduate'),
+('HSCI250', 'CJHSC587', 'Nutrition and Wellness', 'Study of nutrition and healthy lifestyle practices.', 3, 'Undergraduate'),
+
+('FINA101', 'PDFIN902', 'Introduction to Finance', 'Basic principles of personal and business finance.', 3, 'Undergraduate'),
+('FINA220', 'MRFIN146', 'Financial Management', 'Introduction to budgeting, investments, and financial planning.', 3, 'Undergraduate')
+);
+
+insert into course values ( -- g courses
+('GBIO610', 'MBBIO518', 'Advanced Molecular Biology', 'Graduate study of molecular mechanisms in biological systems.', 4, 'Graduate'),
+
+('GHIST620', 'JPHIS390', 'Historical Research Methods', 'Advanced analysis of historiography and archival research.', 3, 'Graduate'),
+
+('GPSY650', 'RJPS556', 'Clinical Assessment Techniques', 'Graduate-level study of psychological assessment and diagnosis.', 3, 'Graduate'),
+
+('GMATH605', 'AGMAT173', 'Applied Statistical Modeling', 'Advanced statistical analysis and predictive modeling techniques.', 3, 'Graduate'),
+
+('GENGL630', 'DHENG502', 'Literary Theory and Criticism', 'Examination of contemporary literary criticism and theory.', 3, 'Graduate'),
+
+('GENGI640', 'KRENG714', 'Engineering Systems Design', 'Advanced engineering design processes and systems analysis.', 3, 'Graduate'),
+
+('GCS670', 'RTCS245', 'Database Architecture', 'Advanced relational database design and optimization.', 3, 'Graduate'),
+
+('GHSCI615', 'EAHSC321', 'Public Health Policy', 'Analysis of healthcare systems and public health policy development.', 3, 'Graduate'),
+
+('GFINA625', 'PDFIN902', 'Investment and Portfolio Analysis', 'Graduate-level study of investment strategy and portfolio management.', 3, 'Graduate')
+);
+
