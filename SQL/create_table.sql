@@ -42,7 +42,7 @@ create table assignment (
 	points int not null check (points > 0),
 	foreign key (cid) references course(cid)
 	);
-     create table submission (
+create table submission (
           subid varchar(30) primary key,
           aid varchar(30) not null,
           sid varchar(30) not null,
@@ -68,5 +68,8 @@ CREATE TABLE grade (
     feedback TEXT,
     FOREIGN KEY (subid) REFERENCES submission(subid)
 );
-    
+
+ALTER TABLE instructor
+ADD prefix VARCHAR(10) NULL;
+
     
